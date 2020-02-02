@@ -2,10 +2,6 @@
 
 def call(Map params = [:]) {
     stage ('test library') {
-        steps {
-            script {
-                'echo "hello word"'
-            }
-        }
+        sh 'echo "hello word"'
     }
 }
